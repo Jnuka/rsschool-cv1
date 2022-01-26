@@ -6,20 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cv_Jnuka</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <div class="container">
+    <header class="header">
+        <div class="container header-container">
             <nav class="nav">
-               <ul>
-                   <li>Contacts</li>
-                   <li>Information</li>
-                   <li>Skills</li>
-                   <li>Code</li>
-                   <li>Experience</li>
-                   <li>Education</li>
-                   <li>English</li>
+               <ul class="nav-list">
+                   <li><a href="#contacts" class="nav-link">Contacts</a></li>
+                   <li><a href="#information" class="nav-link">Information</a></li>
+                   <li><a href="#skills" class="nav-link">Skills</a></li>
+                   <li><a href="#code" class="nav-link">Code</a></li>
+                   <li><a href="#experience" class="nav-link">Experience</a></li>
+                   <li><a href="#education" class="nav-link">Education</a></li>
+                   <li><a href="#english" class="nav-link">English</a></li>
                </ul> 
             </nav>
         </div>     
@@ -32,69 +35,64 @@
                     <h1 class="main-title">Tsel Evgeniya</h1>
                     <h3 class="main-subtitle">Student of the school RS School</h3>
                 </div>              
-            </section>  
+            </section>          
+            <section class="section-info" id="contacts">
+                <h2 class="section-title">Contacts</h2>
+                <ul class="section-list">
+                    <li class="section-item">Russia, <span>Tolyatti</span></li>
+                    <li class="section-item">Phone: <span>+7 (927) 778-79-25</span></li>
+                    <li class="section-item">
+                        Email: <a href="mailto:jnuka@mail.ru" title="email">jnuka@mail.ru</a>
+                    </li>
+                    <li class="section-item">Discord: <span>Evgeniya Tsel (@Jnuka) #0470</span> </li>
+                    <li class="section-item">Github: <a href="https://github.com/Jnuka">Jnuka</a></li>
+                    <li class="section-item">
+                        Telegram: <a href="https://t.me/Jane_Tsel">@Jane_Tsel</a>
+                    </li>
+                    </ul>
+            </section>
+            <section class="section-info" id="information">
+                <h2 class="section-title">Information</h2>
+                <p class="section-info-text">
+                    At the moment my goal is to finish RS School. Information about me will be updated.
+                </p>
+            </section>
+            <section class="section-info" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <p>Completed initial training at code-basics.com:</p>
+                <ul class="section-list">            
+                    <li class="section-item"><a href="https://ru.code-basics.com/languages/html">HTML for beginners</a></li>
+                    <li class="section-item"><a href="https://ru.code-basics.com/languages/css">CSS for beginners</a></li>
+                    <li class="section-item"><a href="https://ru.code-basics.com/languages/javascript">JavaScript for beginners</a></li>
+                </ul>
+            </section>
+            <section class="section-info" id="code">
+                <h2 class="section-title">Code</h2>
+                <pre class="pre-code"><code>const encrypt = (message) => {
+    let messageNew = '';                        
+    for (let i = 0; i <= message.length-1; i += 2) {
+        if (message.length === 3) {
+            messageNew = `${message[i+1]}${message[i]}${message[i+2]}`;
+            return messageNew;
+        }
+    messageNew = `${messageNew}${message[i+1]}${message[i]}`;
+    }
+return messageNew;}</code></pre>                  
+                
+            </section>
+            <section class="section-info" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <p>Currently no experience in the field of front-end</p>
+            </section>
+            <section class="section-info" id="education">
+                <h2 class="section-title">Education</h2>
+                <p>Graduated from the bachelor’s and master’s programs in the direction of “Applied Mathematics and Informatics”</p>
+            </section>
+            <section class="section-info" id="english">
+                <h2>English</h2>
+                <p>I can almost understand what you say to me in English :)</p>
+            </section>
         </div>
-      <section class="section-info" id="contacts">
-          <h2 class="section-title">Contacts</h2>
-          <ul class="section-list">
-              <li>Tolyatti, Russia</li>
-              <li>Phone: +7 (927) 778-79-25</li>
-              <li>
-                Email: <a href="mailto:jnuka@mail.ru" title="email">jnuka@mail.ru</a>
-              </li>
-              <li>Discord: Evgeniya Tsel (@Jnuka) #0470</li>
-              <li>Github: <a href="https://github.com/Jnuka">Jnuka</a></li>
-              <li>
-                  Telegram: <a href="https://t.me/Jane_Tsel">@Jane_Tsel</a>
-              </li>
-            </ul>
-      </section>
-      <section class="section-info" id="information">
-          <h2 class="section-title">Information</h2>
-          <p class="section-info-text">
-            At the moment my goal is to finish R.S.School. Information about me will be updated.
-          </p>
-      </section>
-      <section class="section-info" id="skills">
-        <h2 class="section-title">Skills</h2>
-        <p>Completed initial training at code-basics.com:</p>
-        <ul class="section-list">            
-            <li><a href="https://ru.code-basics.com/languages/html">HTML for beginners</a></li>
-            <li><a href="https://ru.code-basics.com/languages/css">CSS for beginners</a></li>
-            <li><a href="https://ru.code-basics.com/languages/javascript">JavaScript for beginners</a></li>
-        </ul>
-      </section>
-      <section class="section-info" id="code">
-          <h2 class="section-title">Code</h2>
-          <pre class="pre-code">
-              <code>
-                "const encrypt = (message) => {
-                    let messageNew = '';
-                  
-                    for (let i = 0; i <= message.length-1; i += 2) {
-                      if (message.length === 3) {
-                        messageNew = `${message[i+1]}${message[i]}${message[i+2]}`;
-                        return messageNew;
-                      }
-                      messageNew = `${messageNew}${message[i+1]}${message[i]}`;
-                    }
-                    return messageNew;
-                  }"
-              </code>
-          </pre>
-      </section>
-      <section class="section-info" id="experience">
-          <h2 class="section-title">Experience</h2>
-          <p>Сurrently no experience in the field of front-end</p>
-      </section>
-      <section class="section-info" id="education">
-          <h2 class="section-title">Education</h2>
-          <p>Graduated from the bachelor’s and master’s programs in the direction of “Applied Mathematics and Informatics”</p>
-      </section>
-      <section class="section-info" id="english">
-        <h2>English</h2>
-        <p>I can almost understand what you say to me in English :)</p>
-      </section>
     </main>
     <footer class="footer">
         <div class="container footer-container">
