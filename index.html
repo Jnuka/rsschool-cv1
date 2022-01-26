@@ -4,21 +4,113 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VSCode</title>
+    <title>cv_Jnuka</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <article>
-        <p><span class="text-block">text1</span></p>
-    </article> 
-    <script src="script.js"></script> 
-    <div><img src="" alt="logo"></div>
-    <div><img src="" alt="logo"></div>
-    <div><img src="" alt="logo"></div>
-    <div><img src="" alt="logo"></div>
-    <div><img src="" alt="logo"></div>
+    <header>
+        <div class="container">
+            <nav class="nav">
+               <ul>
+                   <li>Contacts</li>
+                   <li>Information</li>
+                   <li>Skills</li>
+                   <li>Code</li>
+                   <li>Experience</li>
+                   <li>Education</li>
+                   <li>English</li>
+               </ul> 
+            </nav>
+        </div>     
+    </header>
+    <main class="main">
+        <div class="container main-container">
+            <section class="section-profile">
+                <img src="/photo.jpg" alt="myPhoto" class="photo-logo">      
+                <div class="section-profile-title">  
+                    <h1 class="main-title">Tsel Evgeniya</h1>
+                    <h3 class="main-subtitle">Student of the school RS School</h3>
+                </div>              
+            </section>  
+        </div>
+      <section class="section-info" id="contacts">
+          <h2 class="section-title">Contacts</h2>
+          <ul class="section-list">
+              <li>Tolyatti, Russia</li>
+              <li>Phone: +7 (927) 778-79-25</li>
+              <li>
+                Email: <a href="mailto:jnuka@mail.ru" title="email">jnuka@mail.ru</a>
+              </li>
+              <li>Discord: Evgeniya Tsel (@Jnuka) #0470</li>
+              <li>Github: <a href="https://github.com/Jnuka">Jnuka</a></li>
+              <li>
+                  Telegram: <a href="https://t.me/Jane_Tsel">@Jane_Tsel</a>
+              </li>
+            </ul>
+      </section>
+      <section class="section-info" id="information">
+          <h2 class="section-title">Information</h2>
+          <p class="section-info-text">
+            At the moment my goal is to finish R.S.School. Information about me will be updated.
+          </p>
+      </section>
+      <section class="section-info" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <p>Completed initial training at code-basics.com:</p>
+        <ul class="section-list">            
+            <li><a href="https://ru.code-basics.com/languages/html">HTML for beginners</a></li>
+            <li><a href="https://ru.code-basics.com/languages/css">CSS for beginners</a></li>
+            <li><a href="https://ru.code-basics.com/languages/javascript">JavaScript for beginners</a></li>
+        </ul>
+      </section>
+      <section class="section-info" id="code">
+          <h2 class="section-title">Code</h2>
+          <pre class="pre-code">
+              <code>
+                "const encrypt = (message) => {
+                    let messageNew = '';
+                  
+                    for (let i = 0; i <= message.length-1; i += 2) {
+                      if (message.length === 3) {
+                        messageNew = `${message[i+1]}${message[i]}${message[i+2]}`;
+                        return messageNew;
+                      }
+                      messageNew = `${messageNew}${message[i+1]}${message[i]}`;
+                    }
+                    return messageNew;
+                  }"
+              </code>
+          </pre>
+      </section>
+      <section class="section-info" id="experience">
+          <h2 class="section-title">Experience</h2>
+          <p>Сurrently no experience in the field of front-end</p>
+      </section>
+      <section class="section-info" id="education">
+          <h2 class="section-title">Education</h2>
+          <p>Graduated from the bachelor’s and master’s programs in the direction of “Applied Mathematics and Informatics”</p>
+      </section>
+      <section class="section-info" id="english">
+        <h2>English</h2>
+        <p>I can almost understand what you say to me in English :)</p>
+      </section>
+    </main>
+    <footer class="footer">
+        <div class="container footer-container">
+            <dvi>
+                "© 2022"
+                <a href="https://github.com/Jnuka">Jnuka</a>
+            </dvi>
+            <a href="https://rs.school/js/" class="rss-logo"></a>
+        </div>
+    </footer>
 </body>
-<!-- TODO-->
+
+
+
+
+
 
 
 
