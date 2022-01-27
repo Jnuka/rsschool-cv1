@@ -1,0 +1,354 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth; 
+  }
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 320px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;  
+    color:#3E5829;
+}
+
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    min-height: 50px;
+}
+
+/**Header**/
+.header {
+    background-color: rgba(62, 88, 41, .6);
+    
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    position: relative;
+    padding: 0 12px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 50px;
+    color: #1D2913;       
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 12px;
+    bottom: -5px;
+    width: calc(100% - 24px);
+    height: 2px;
+    background-color: #1D2913;
+    opacity: 0;
+    transition: .5s;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    animation-name: word-underlining;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes word-underlining {
+    from {
+      width: 0;
+    }
+    to {
+      width: calc(100% - 24px);
+    }
+}
+  
+/**Main blocks**/
+
+main {
+    margin-bottom: auto;
+}
+
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/**Profile Blocks. Title and subtitle**/
+
+.section-profile {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    padding: 50px 30px 35px;
+    border-bottom: 15px solid #98ac88;
+}
+
+.photo-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 20%;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .6);
+    filter: grayscale(0.2) brightness(1.05);
+    transition: .3s;
+}
+
+.photo-logo:hover {
+    filter: none;
+}
+
+.section-profile-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.main-title {
+    position: relative;
+    padding: 0;
+    margin-bottom: 20px;
+    color: #1D2913;
+    font-size: 36px;
+    font-weight: 600;
+    letter-spacing: 15px;
+    line-height: 50px;
+    word-spacing: 5px;
+}
+
+.main-title::after {
+    content: "";
+    position: absolute;
+    bottom: -19px;
+    left: 50%;
+    margin-left: -156px;
+    width: 300px;
+    height: 2px;
+    background-color: #98ac88;
+}
+
+.main-subtitle {
+    margin-top: 20px;
+    color: #3E5829;
+    line-height: 70px;
+    font-size: 25px;
+    font-weight: 300;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+}
+
+/**Blocks with another informations**/
+
+.section-info {
+    width: calc(50% - 20px);
+    padding: 10px;
+    padding-bottom: 35px;
+    border-bottom: 1px solid #3E5829;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+.section-experience,
+.section-english {
+    border-bottom: 0;
+}
+
+.section-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color:#3E5829;
+}
+
+.section-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.section-item {
+    position: relative;
+    margin: 0;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-left: 30px;    
+}
+
+.section-item::before {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    background-size: 20px 20px;
+    background-image: url("./photo.jpg");
+}
+
+.section-item span{
+    color: #3E5829;
+}
+
+.section-item a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #3E5829;
+    transition: color 0.5s;
+}
+
+.section-item a:hover {
+    color:#1D2913;
+}
+
+.pre-code {
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+}
+
+/**Footer**/
+
+.footer {
+    background-color: rgba(62, 88, 41, .6);
+    padding: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    color: #1D2913;
+}
+
+.link-github {
+    color: #1D2913;
+    text-decoration: none;
+    line-height: 45px;
+}
+
+.rss-logo {
+    width: 121px;
+    height: 45px;
+    background-image: url(https://cv-hints.netlify.app/assets/svg/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/**Adaptive**/
+
+.toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    user-select: none;
+    z-index: 15;
+}
+
+.toggle div {
+    width: 80%;
+    height: 2px;
+    background-color: rgba(62, 88, 41, .6);
+    margin: 3px 0;
+    z-index: 15;
+}
+
+.toggle.collapsed .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle.collapsed .line2 {
+    opacity: 0;
+}
+
+.toggle.collapsed .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+@media (max-width: 1440px) {
+    .container {
+        padding: 0 20px;
+    }
+}
+/**899**/
+@media (max-width:899px) {
+    .nav {
+        display: none;
+    }
+
+    .toggle {
+        display: flex;
+    }
+    
+    .nav.collapsed {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        min-height: 525px;
+        flex-direction: column;
+        background-color: rgb(174, 199, 153);
+    }
+
+    .nav-list.collapsed {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+
+    .section-info {
+        width: 100%;
+    }
+
+    .section-profile {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section-experience {
+        border-bottom: 1px solid #3E5829;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }    
+}
+
+@media (max-width: 410px) {
+    .main-title {
+        font-size: 24px;
+        letter-spacing: 4px;
+    }
+}
