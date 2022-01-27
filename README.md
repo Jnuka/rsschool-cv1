@@ -1,2 +1,2 @@
-https://Jnuka-USERNAME.github.io/rsschool-cv/cv
-https://Jnuka-USERNAME.github.io/rsschool-cv/
+https://Jnuka.github.io/rsschool-cv/cv
+https://Jnuka.github.io/rsschool-cv/
