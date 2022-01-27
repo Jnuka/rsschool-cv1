@@ -18,13 +18,19 @@
                <ul class="nav-list">
                    <li><a href="#contacts" class="nav-link">Contacts</a></li>
                    <li><a href="#information" class="nav-link">Information</a></li>
-                   <li><a href="#skills" class="nav-link">Skills</a></li>
+                   <li><a href="#code" class="nav-link">Courses</a></li>                   
                    <li><a href="#code" class="nav-link">Code</a></li>
-                   <li><a href="#experience" class="nav-link">Experience</a></li>
+                   <li><a href="#skills" class="nav-link">Skills</a></li>
                    <li><a href="#education" class="nav-link">Education</a></li>
+                   <li><a href="#experience" class="nav-link">Experience</a></li>                   
                    <li><a href="#english" class="nav-link">English</a></li>
                </ul> 
             </nav>
+            <div class="burger-menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </div>     
     </header>
     <main class="main">
@@ -57,8 +63,8 @@
                     At the moment my goal is to finish RS School. Information about me will be updated.
                 </p>
             </section>
-            <section class="section-info" id="skills">
-                <h2 class="section-title">Skills</h2>
+            <section class="section-info" id="courses">
+                <h2 class="section-title">Courses</h2>
                 <p>Completed initial training at code-basics.com:</p>
                 <ul class="section-list">            
                     <li class="section-item"><a href="https://ru.code-basics.com/languages/html">HTML for beginners</a></li>
@@ -68,27 +74,29 @@
             </section>
             <section class="section-info" id="code">
                 <h2 class="section-title">Code</h2>
-                <pre class="pre-code"><code>const encrypt = (message) => {
-    let messageNew = '';                        
-    for (let i = 0; i <= message.length-1; i += 2) {
-        if (message.length === 3) {
-            messageNew = `${message[i+1]}${message[i]}${message[i+2]}`;
-            return messageNew;
-        }
-    messageNew = `${messageNew}${message[i+1]}${message[i]}`;
+                <pre class="pre-code"><code>const encrypt = (str) => {
+    let result = '';
+    for (let i = 0; i < str.length; i += 2) {
+        const nextSymbol = str[i + 1] || '';
+        result = `${result}${nextSymbol}${str[i]}`;
     }
-return messageNew;}</code></pre>                  
-                
+                  
+    return result;
+};</code></pre>
             </section>
-            <section class="section-info" id="experience">
-                <h2 class="section-title">Experience</h2>
-                <p>Currently no experience in the field of front-end</p>
+            <section class="section-info" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <p>Small skills of writing in HTML in CSS</p>                
             </section>
             <section class="section-info" id="education">
                 <h2 class="section-title">Education</h2>
-                <p>Graduated from the bachelor’s and master’s programs in the direction of “Applied Mathematics and Informatics”</p>
-            </section>
-            <section class="section-info" id="english">
+                <p>Graduated from the bachelor's and master's programs in the direction of Applied Mathematics and Informatics</p>
+            </section>            
+            <section class="section-info section-experience" id="experience">
+                <h2 class="section-title">Experience</h2>
+                <p>Currently no experience in the field of front-end</p>
+            </section>            
+            <section class="section-info section-english" id="english">
                 <h2>English</h2>
                 <p>I can almost understand what you say to me in English :)</p>
             </section>
@@ -97,8 +105,8 @@ return messageNew;}</code></pre>
     <footer class="footer">
         <div class="container footer-container">
             <dvi>
-                "© 2022"
-                <a href="https://github.com/Jnuka">Jnuka</a>
+                © 2022
+                <a href="https://github.com/Jnuka" class="link-github">Jnuka</a>
             </dvi>
             <a href="https://rs.school/js/" class="rss-logo"></a>
         </div>
