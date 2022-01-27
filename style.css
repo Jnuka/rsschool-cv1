@@ -41,10 +41,10 @@ body {
     position: relative;
     padding: 0 12px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: 600;
-    line-height: 20px;
-    color: #1D2913;    
+    line-height: 50px;
+    color: #1D2913;       
 }
 
 .nav-link::after {
@@ -204,10 +204,7 @@ main {
 }
 
 .section-item span{
-    text-decoration: none;
-    font-weight: 600;
     color: #3E5829;
-    transition: color 0.5s;
 }
 
 .section-item a{
@@ -258,7 +255,7 @@ main {
 
 /**Adaptive**/
 
-.burger-menu {
+.toggle {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -272,23 +269,23 @@ main {
     z-index: 15;
 }
 
-.burger-menu div {
+.toggle div {
     width: 80%;
     height: 2px;
-    background-color: #1D2913;
+    background-color: rgba(62, 88, 41, .6);
     margin: 3px 0;
     z-index: 15;
 }
 
-.burger-menu.collapsed .line1 {
+.toggle.collapsed .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
 }
 
-.burger-menu.collapsed .line2 {
+.toggle.collapsed .line2 {
     opacity: 0;
 }
 
-.burger-menu.collapsed .line3 {
+.toggle.collapsed .line3 {
     transform: rotate(45deg) translate(-5px, -6px);
 }
 
@@ -297,13 +294,13 @@ main {
         padding: 0 20px;
     }
 }
-
+/**899**/
 @media (max-width:899px) {
     .nav {
         display: none;
     }
 
-    .burger-menu {
+    .toggle {
         display: flex;
     }
     
@@ -317,7 +314,7 @@ main {
         height: 100vh;
         min-height: 525px;
         flex-direction: column;
-        background-color: #1D2913;
+        background-color: rgb(174, 199, 153);
     }
 
     .nav-list.collapsed {
